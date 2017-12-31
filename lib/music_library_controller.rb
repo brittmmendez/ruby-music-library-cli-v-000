@@ -88,6 +88,7 @@ require 'pry'
       song = Song.all.uniq.sort_by {|obj| obj.name} [input - 1]
       puts "Playing #{song.name} by #{song.artist.name}"
     else
+      nil
     end
   end
 
