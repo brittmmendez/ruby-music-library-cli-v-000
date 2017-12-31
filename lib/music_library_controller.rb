@@ -83,9 +83,9 @@ require 'pry'
     input=""
     puts "Which song number would you like to play?"
     input = gets.to_i
-    array<<list_songs
+    list_songs
     if input >=1 and input <=Song.all.uniq.length
-    
+
 
 
     end
