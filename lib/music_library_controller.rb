@@ -80,15 +80,12 @@ require 'pry'
   end
 
   def play_song
-    binding.pry
     input=""
-
     puts "Which song number would you like to play?"
     input = gets.to_i
-    list_songs
+    array<<list_songs
     if input >=1 and input <=Song.all.uniq.length
-    else
-      "not right input"
+    
 
 
     end
