@@ -85,6 +85,7 @@ require 'pry'
     input = gets.to_i
     list_songs
     if input >=1 and input <=Song.all.uniq.length
+      song = Song.all.uniq.sort_by {|obj| obj.name} [input - 1]
 
 
 
