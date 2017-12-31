@@ -83,7 +83,7 @@ require 'pry'
     input=""
 
     puts "Which song number would you like to play?"
-    input = gets.strip
+    input = gets.strip.to_int
     list_songs
     if input >=1 and input <=Song.all.uniq.length
 
