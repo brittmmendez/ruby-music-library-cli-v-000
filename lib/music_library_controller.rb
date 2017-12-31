@@ -87,7 +87,9 @@ require 'pry'
     input = gets.to_i
     list_songs
     if input >=1 and input <=Song.all.uniq.length
-      
+    else
+      "not right input"
+
 
     end
   end
